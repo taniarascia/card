@@ -1,0 +1,31 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "Sass boilerplate for simple projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniarascia/sb.git"
+  },
+  "keywords": [
+    "sass",
+    "scss"
+  ],
+  "author": "Tania Rascia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taniarascia/sb/issues"
+  },
+  "homepage": "https://github.com/taniarascia/sb#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

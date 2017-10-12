@@ -1,0 +1,122 @@
+    // Testing
+    $primary: #E76C67;
+    $border: #efefef;
+    $padding-mobile: 1.5rem;
+    $padding-desktop: 2rem;
+    * {
+      &::before,
+      &::after {
+        box-sizing: border-box;
+      }
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      color: #444444;
+      font-family: 'Nunito', sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 1rem 0;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      transition: all .3s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    @media screen and (min-width: 800px) {
+      .flex-container {
+        display: flex;
+      }
+    }
+
+    .card {
+      border: 1px solid $border;
+      margin: 1rem 0;
+      box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+      transition: all .3s ease;
+      &:hover {
+        box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.75rem;
+        line-height: 1.2;
+      }
+      p {
+        margin: 0;
+        color: #666666;
+      }
+      .subtitle {
+        margin: 0 0 1rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $primary;
+      }
+      .card-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .card-content {
+        padding: $padding-mobile;
+      }
+      .card-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $border;
+        margin-top: $padding-mobile;
+        padding-top: $padding-mobile;
+        .options {
+          a {
+            color: #666666;
+            &:hover {
+              color: #333333;
+            }
+          }
+          .fa {
+            margin-right: .25rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      .card {
+        margin: .5rem;
+        .card-content {
+          padding: $padding-desktop;
+        }
+        .card-details {
+          padding-top: $padding-desktop;
+        }
+      }
+    }
+
+    .button {
+      display: block;
+      font-size: 1rem;
+      background: $primary;
+      border: 1px solid $primary;
+      padding: .75rem 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      &:hover,
+      &:focus {
+        background: darken($primary, 10%);
+        border: 1px solid darken($primary, 10%);
+      }
+    }
