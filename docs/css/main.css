@@ -1,0 +1,100 @@
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  color: #444444;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6; }
+
+body {
+  margin: 1rem 0; }
+
+a {
+  color: #E76C67;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+@media screen and (min-width: 800px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.card {
+  border: 1px solid #efefef;
+  margin: 1rem 0;
+  -webkit-box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  .card:hover {
+    -webkit-box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
+  .card h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: 1.2; }
+  .card p {
+    margin: 0;
+    color: #666666; }
+  .card .subtitle {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #E76C67; }
+  .card .card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .card .card-content {
+    padding: 1.5rem; }
+  .card .card-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem; }
+    .card .card-details .options a {
+      color: #666666; }
+      .card .card-details .options a:hover {
+        color: #333333; }
+    .card .card-details .options .fa {
+      margin-right: .25rem; }
+
+@media screen and (min-width: 800px) {
+  .card {
+    margin: .5rem; }
+    .card .card-content {
+      padding: 2rem; }
+    .card .card-details {
+      padding-top: 2rem; } }
+
+.button {
+  display: block;
+  font-size: 1rem;
+  background: #E76C67;
+  border: 1px solid #E76C67;
+  padding: .75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center; }
+  .button:hover, .button:focus {
+    background: #e0413b;
+    border: 1px solid #e0413b; }

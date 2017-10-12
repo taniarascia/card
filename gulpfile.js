@@ -25,7 +25,7 @@ gulp.task('workflow', function () {
                 path.basename += '.min';
             }
         }))
-        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./docs/css/'))
 });
 
 //Watch task
