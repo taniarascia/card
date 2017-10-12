@@ -27,7 +27,7 @@
   }
 
   .container {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -37,8 +37,9 @@
       display: flex;
     }
   }
-
+ 
   .card {
+    flex: 1;
     border: 1px solid $border;
     margin: 15px 0;
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);

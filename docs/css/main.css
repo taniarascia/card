@@ -19,7 +19,7 @@ a {
   transition: all .3s ease; }
 
 .container {
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -30,6 +30,9 @@ a {
     display: flex; } }
 
 .card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid #efefef;
   margin: 15px 0;
   -webkit-box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
