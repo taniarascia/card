@@ -15,7 +15,7 @@ gulp.task('workflow', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./dist/css/')) // unminified
+        .pipe(gulp.dest('./docs/css/')) // unminified
         .pipe(cssnano({
             zindex: false
         }))

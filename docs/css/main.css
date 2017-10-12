@@ -4,6 +4,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #444444;
   font-family: 'Nunito', sans-serif;
   line-height: 1.6; }
@@ -20,7 +21,7 @@ a {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem; }
+  padding: 0 15px; }
 
 @media screen and (min-width: 800px) {
   .flex-container {
@@ -30,11 +31,12 @@ a {
 
 .card {
   border: 1px solid #efefef;
-  margin: 1rem 0;
+  margin: 15px 0;
   -webkit-box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  position: relative; }
   .card:hover {
     -webkit-box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
     box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
@@ -43,10 +45,10 @@ a {
     font-size: 1.75rem;
     line-height: 1.2; }
   .card p {
-    margin: 0;
+    margin: 0 0 30px;
     color: #666666; }
   .card .subtitle {
-    margin: 0 0 1rem;
+    margin: 0 0 15px;
     font-size: 1.25rem;
     font-weight: 700;
     color: #E76C67; }
@@ -56,8 +58,16 @@ a {
     background-position: center center;
     background-repeat: no-repeat; }
   .card .card-content {
-    padding: 1.5rem; }
+    padding: 30px 30px 110px; }
   .card .card-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0; }
+  .card .card-details-inner {
+    border-top: 1px solid #efefef;
+    margin: 0 30px;
+    padding: 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,24 +76,17 @@ a {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    border-top: 1px solid #efefef;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem; }
-    .card .card-details .options a {
-      color: #666666; }
-      .card .card-details .options a:hover {
-        color: #333333; }
-    .card .card-details .options .fa {
-      margin-right: .25rem; }
+    align-items: center; }
+  .card .options a {
+    color: #666666; }
+    .card .options a:hover {
+      color: #222222; }
+  .card .options .fa {
+    margin-right: .25rem; }
 
 @media screen and (min-width: 800px) {
   .card {
-    margin: .5rem; }
-    .card .card-content {
-      padding: 2rem; }
-    .card .card-details {
-      padding-top: 2rem; } }
+    margin: .5rem; } }
 
 .button {
   display: block;
