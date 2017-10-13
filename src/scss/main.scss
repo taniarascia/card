@@ -1,6 +1,7 @@
   // Testing
   $primary: #E76C67;
   $border: #efefef;
+
   * {
     &::before,
     &::after {
@@ -37,9 +38,9 @@
       display: flex;
     }
   }
- 
+
   .card {
-    flex: 1;
+    flex: 1 1 50%; 
     border: 1px solid $border;
     margin: 15px 0;
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
@@ -110,7 +111,7 @@
     font-size: 1rem;
     background: $primary;
     border: 1px solid $primary;
-    padding: .75rem 1rem;
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
     font-weight: 700;
